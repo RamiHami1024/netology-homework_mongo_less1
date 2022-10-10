@@ -1,5 +1,6 @@
 # INSERT
 
+```
 db.books.insertMany([
     {
         title: "string",
@@ -12,16 +13,21 @@ db.books.insertMany([
         authors: "string"
     }
 ])
+```
 
 # SELECT
 
+```
 db.books.find({ title: "title" })
+```
 
 # UPDATE
 
+```
 db.books.updateOne(
     { _id: objectId }, 
     [{ $set: 
         { description: "string", authors: "string" } 
     }]
 )
+```
